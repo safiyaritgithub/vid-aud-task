@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas-video-audio</title>
+</head>
+<body>
+  <h1>Canvas</h1>
+  <p>The canvas element provides a drawing surface for rendering graphics, animations, charts, and other visualizations dynamically within a web page using JavaScript.</p>
+  <canvas id="myCanvas" width="200" height="100"></canvas>
+<h1>Video</h1>
+<p>The video element allows embedding video content directly into web pages without requiring third-party plugins like Adobe Flash or Silverlight.
+  Developers can specify multiple video sources (e.g., different formats or resolutions) using the source element within video, ensuring cross-browser compatibility and fallback options.</p>
+<video controls>
+<source src="https://www.w3schools.com/html/mov_bbb.mp4">
+</video>
+<h1>Audio</h1>
+<p> the audio element enables embedding audio files (e.g., music, podcasts, sound effects) directly into web pages.
+  Developers can include multiple audio sources using source elements to ensure compatibility across different browsers and platforms.</p>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.ogg">
+    </audio>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+  var context = canvas.getContext('2d');
+  context.fillStyle = 'red';
+  context.fillRect(10, 10, 50, 50);
+</script>
+
+  
+</body>
+</html>
